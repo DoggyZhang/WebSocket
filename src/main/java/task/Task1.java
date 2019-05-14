@@ -12,11 +12,12 @@ public class Task1 extends Task {
 
     public static final String HOST = "localhost";
     public static final int PORT = 8888;
-    public static final long SLEEP_TIME = 300;
+    public static final long SLEEP_TIME = 150;
 
     public String execute() {
         while (true) {
             try {
+                Thread.sleep(SLEEP_TIME);
                 //创建Socket对象
                 Socket socket = new Socket(HOST, PORT);
                 InputStream inputStream = socket.getInputStream();//获取一个输入流，接收服务端的信息

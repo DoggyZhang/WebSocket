@@ -58,13 +58,13 @@ public class CommandManger implements ProgressListener {
         Task task = null;
         switch (command) {
             case COMMAND_0:
-
+                stop();
                 break;
             case COMMAND_1:
+                stop();
                 task = new Task1();
                 break;
             case COMMAND_2:
-                stop();
                 return;
             case COMMAND_3:
 
